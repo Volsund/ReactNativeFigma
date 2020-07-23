@@ -6,3 +6,4 @@ import './components/GoogleButton.stories';
 import './views/SignUp.stories';
 import './views/Login.stories';
 import './views/ForgotPassword.stories';
+import './views/SimilarResults.stories';
