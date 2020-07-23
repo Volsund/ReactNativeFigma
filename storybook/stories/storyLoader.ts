@@ -4,3 +4,5 @@ import './components/Input.stories';
 import './components/FacebookButton.stories';
 import './components/GoogleButton.stories';
 import './views/SignUp.stories';
+import './views/Login.stories';
+import './views/ForgotPassword.stories';
