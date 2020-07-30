@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, { useState } from 'react';
 import {
     ScrollView,
@@ -12,14 +13,17 @@ import {
 } from 'react-native';
 import storybook from './storybook';
 import { Hello } from './src/components';
+import { NavigationContainer } from '@react-navigation/native';
 
 const IS_STORYBOOK = true;
 
 function App() {
     return (
-        <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
-        </View>
+        <NavigationContainer>
+            <View style={styles.container}>
+                <Text>Open up App.tsx to start working on your app!</Text>
+            </View>
+        </NavigationContainer>
     );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 interface Props {
     title: string;
@@ -10,6 +11,22 @@ export const Button: React.FC<Props> = ({ title, onPress }) => {
     return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
             <Text style={styles.text}>{title}</Text>
+            {/* Gradient button */}
+            <LinearGradient
+                // Button Linear Gradient
+                colors={['white', 'black']}
+                style={{ padding: 15, alignItems: 'center', borderRadius: 5 }}
+            >
+                <Text
+                    style={{
+                        backgroundColor: 'transparent',
+                        fontSize: 15,
+                        color: '#fff',
+                    }}
+                >
+                    Press Me
+                </Text>
+            </LinearGradient>
         </TouchableOpacity>
     );
 };
